@@ -29,5 +29,20 @@ book.info();
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
+let sentence = "The quick brown fox jumps over the lazy dog";
+function reverseWords(sentence) {
+    let result = [];
+    let words = sentence.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        let letters = words[i].split("");
+        letters.reverse();
+        let reverseWord = letters.join("");
+        result.push(reverseWord);
+    }
+    return result.join(" ");
+}
+console.log(reverseWords(sentence));
+console.log(reverseWords("Hello my name is Emma"));
+
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
