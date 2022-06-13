@@ -16,6 +16,16 @@ console.log(arraySum(numbers));
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
+let book = {};
+book.title = "Pride and Prejudice";
+book.author = "Jane Austen";
+book.pages = 432;
+book.readCount = 1;
+book.info = function() {
+    console.log(`${this.title} by ${this.author} has ${this.pages} pages, and I have read it ${this.readCount} time(s).`);
+};
+book.info();
+
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
